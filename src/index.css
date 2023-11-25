@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    .align-center{
+        @apply flex justify-center items-center w-full
+    }
+}
+
+@layer components{
+    .left-side-content-list{
+        @apply flex md:w-1/2 w-full md:justify-start justify-between h-full items-center
+    }
+    .right-side-content-list{
+        @apply flex md:w-1/2 w-full md:justify-end justify-between h-full items-center
+    }
+    .user-profile-section{
+        @apply flex md:flex-row flex-col justify-between min-h-fit w-full items-center
+    }
+    .post-container{
+        @apply col-span-1 w-full border p-2 flex justify-center items-center flex-col rounded-md border-gray-400
+    }
+}
+
+@layer {
+    .heading{
+        @apply font-extrabold text-xl font-mono 
+    }
+    .container{
+        @apply p-2 w-full
+    }
+}
